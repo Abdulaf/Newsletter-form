@@ -800,6 +800,10 @@ video {
     flex-direction: row;
   }
 
+  .md\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .md\:rounded-xl {
     border-radius: 0.75rem;
   }
