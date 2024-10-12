@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>newsletter&mdash;form</title>
+  </head>
+  <body class="bg-naviblue font-sans">
+    <!-- Main Card container -->
+    <div
+      class="main-card -mt-6 md:p-5 container mx-auto md:mt-14 flex flex-col md:flex-row bg-white justify-center items-center md:max-w-[800px] md:rounded-xl"
+    >
+      <!-- mobile image -->
+      <div>
+        <img
+          src="assets/images/illustration-sign-up-mobile.svg"
+          class="mb-5 rounded-xl md:hidden"
+          alt="illustration-sign-up-mobile"
+        />
+      </div>
+      <!-- content section -->
+      <div
+        class="flex flex-col max-w-[500px] gap-y-6 h-full md:pl-5 md:pr-10 px-3 py-9"
+      >
+        <!-- heading -->
+        <h1 class="font-bold text-darkblue text-5xl">Stay Updated!</h1>
+        <!-- decription -->
+        <p class="text-darkblue leading-normal">
+          join 60,000+ product managers receving montly updates on
+        </p>
+        <!-- Lists -->
+        <div class="space-y-3">
+          <!-- List no-1 -->
+          <div class="flex gap-3">
+            <img src="assets/images/icon-list.svg" alt="success-icon" />
+            <p class="text-darkblue">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <!-- List no-2 -->
+          <div class="flex gap-3">
+            <img src="assets/images/icon-list.svg" alt="success-icon" />
+            <p class="text-darkblue">
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <!-- List no-3 -->
+          <div class="flex gap-3">
+            <img src="assets/images/icon-list.svg" alt="success-icon" />
+            <p class="text-darkblue">And much more</p>
+          </div>
+        </div>
+        <!-- Label -->
+        <div class="flex justify-between">
+          <p class="text-darkblue font-bold">Email address</p>
+          <p class="errormsg font-bold text-errormsg hidden">
+            Valid email required
+          </p>
+          <!-- Form -->
+        </div>
+        <form class="flex flex-col gap-4" action="">
+          <input
+            type="email"
+            placeholder="me@gmail.com"
+            class="px-5 py-3 rounded-xl border outline-0 input"
+          />
+          <!-- Submit button -->
+          <button
+            class="submit bg-darkblue hover:bg-gradient-to-l from-linear2 to-linear1 font-bold text-white py-3 rounded-xl"
+            type="submit"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <!-- image section -->
+      <div>
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          class="hidden md:block"
+          alt="illustration-sign-up-desktop"
+        />
+      </div>
+    </div>
+
+    <!---------------------------------------------Success active page ---------------------------------------->
+    <!-- Success card container -->
+    <div
+      class="success-card p-10 bg-white flex flex-col items-start justify-center mx-auto max-w-[350px] gap-5 md:my-28 md:rounded-xl hidden"
+    >
+      <!-- Success icon -->
+      <img
+        src="assets/images/icon-success.svg"
+        alt="success-icon"
+        class="w-14"
+      />
+      <!-- Heading -->
+      <h1 class="font-bold text-darkblue text-5xl">Thanks for subscribing!</h1>
+      <!-- content -->
+      <p class="text-darkblue leading-normal">
+        A confirmation email has been sent to
+        <b class="email__customer"></b> please open it and clock the button
+        inside to confirm your Subscription
+      </p>
+      <!-- Submit button -->
+      <button
+        class="bg-darkblue w-full hover:bg-gradient-to-l from-linear2 to-linear1 font-bold text-white py-3 rounded-xl dismiss-btn mt-16 md:mt-0"
+        type="submit"
+      >
+        Dismiss Message
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
